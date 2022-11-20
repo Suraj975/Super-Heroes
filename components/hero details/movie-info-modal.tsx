@@ -16,6 +16,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  useToast,
 } from "@chakra-ui/react";
 import { TabsLabelValues } from "./hero-description";
 import { IMovieInfo } from "./types";
@@ -32,14 +33,22 @@ export function MovieInfoModal({
   imdbId,
 }: MovieInfoModalPropsType) {
   const [movieInfo, setMovieInfo] = useState<IMovieInfo>();
+  const toast = useToast();
   const getMoviesInfo = async () => {
     const movieInfoResponse = await fetch(
       `https://imdb-api.com/en/API/Title/k_4zl80m9s/${imdbId}/Images,Trailer,Ratings`
     );
     const data = await movieInfoResponse?.json();
     if (data?.errorMessage) {
-      // alert(data?.errorMessage);
-      onClose();
+      toast({
+        position: "bottom-right",
+        render: () => (
+          <Box color="white" p={3} bg="red.500">
+            {data?.errorMessage}
+          </Box>
+        ),
+      });
+      //onClose();
       return;
     }
     setMovieInfo(data);
@@ -47,7 +56,7 @@ export function MovieInfoModal({
 
   useEffect(() => {
     getMoviesInfo();
-  }, []);
+  }, [imdbId]);
   return (
     <>
       <Modal size="2xl" isOpen={isOpen} onClose={onClose}>
