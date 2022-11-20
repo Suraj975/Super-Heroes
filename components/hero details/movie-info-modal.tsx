@@ -48,7 +48,7 @@ export function MovieInfoModal({
           </Box>
         ),
       });
-      //onClose();
+      onClose();
       return;
     }
     setMovieInfo(data);
