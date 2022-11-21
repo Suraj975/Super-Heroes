@@ -10,7 +10,7 @@ export const useHandlePagination = (
   const movieListObserver = useRef<IntersectionObserver | null>(null);
   const lastElementRef = useCallback(
     (node: HTMLElement | null) => {
-      if (Number(totalResults) < page + 1) return;
+      if (Number(totalResults) < data?.length + 1) return;
       if (movieListObserver.current) movieListObserver?.current?.disconnect();
       movieListObserver.current = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {

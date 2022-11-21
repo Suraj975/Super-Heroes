@@ -1,5 +1,119 @@
 export const charactersList = [
   {
+    id: 70,
+    name: "Batman",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/70-batman.jpg",
+  },
+  {
+    id: 644,
+    name: "Superman",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/644-superman.jpg",
+  },
+  {
+    id: 620,
+    name: "Spider-Man",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/620-spider-man.jpg",
+  },
+  {
+    id: 623,
+    name: "Spider-Woman",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/623-spider-woman.jpg",
+  },
+  {
+    id: 370,
+    name: "Joker",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/370-joker.jpg",
+  },
+  {
+    id: 201,
+    name: "Daredevil",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/201-daredevil.jpg",
+  },
+  {
+    id: 30,
+    name: "Ant-Man",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/30-ant-man.jpg",
+  },
+  {
+    id: 308,
+    name: "Hancock",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/308-hancock.jpg",
+  },
+  {
+    id: 309,
+    name: "Harley Quinn",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/309-harley-quinn.jpg",
+  },
+  {
+    id: 310,
+    name: "Harry Potter",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/310-harry-potter.jpg",
+  },
+  {
+    id: 38,
+    name: "Aquaman",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/38-aquaman.jpg",
+  },
+  {
+    id: 226,
+    name: "Doctor Strange",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/226-doctor-strange.jpg",
+  },
+  {
+    id: 311,
+    name: "Havok",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/311-havok.jpg",
+  },
+  {
+    id: 312,
+    name: "Hawk",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/312-hawk.jpg",
+  },
+  {
+    id: 720,
+    name: "Wonder Woman",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/720-wonder-woman.jpg",
+  },
+  {
+    id: 332,
+    name: "Hulk",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/332-hulk.jpg",
+  },
+  {
+    id: 313,
+    name: "Hawkeye",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/313-hawkeye.jpg",
+  },
+  {
+    id: 345,
+    name: "Iron Fist",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/345-iron-fist.jpg",
+  },
+  {
+    id: 346,
+    name: "Iron Man",
+    image:
+      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/346-iron-man.jpg",
+  },
+  {
     id: 1,
     name: "A-Bomb",
     image:
@@ -137,12 +251,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/29-annihilus.jpg",
   },
-  {
-    id: 30,
-    name: "Ant-Man",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/30-ant-man.jpg",
-  },
+
   {
     id: 31,
     name: "Ant-Man II",
@@ -179,12 +288,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/37-aqualad.jpg",
   },
-  {
-    id: 38,
-    name: "Aquaman",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/38-aquaman.jpg",
-  },
+
   {
     id: 39,
     name: "Arachne",
@@ -310,12 +414,6 @@ export const charactersList = [
     name: "Batman",
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/69-batman.jpg",
-  },
-  {
-    id: 70,
-    name: "Batman",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/70-batman.jpg",
   },
   {
     id: 71,
@@ -821,12 +919,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/200-daphne-powell.jpg",
   },
-  {
-    id: 201,
-    name: "Daredevil",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/201-daredevil.jpg",
-  },
+
   {
     id: 202,
     name: "Darkhawk",
@@ -959,12 +1052,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/225-doctor-octopus.jpg",
   },
-  {
-    id: 226,
-    name: "Doctor Strange",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/226-doctor-strange.jpg",
-  },
+
   {
     id: 227,
     name: "Domino",
@@ -1326,42 +1414,6 @@ export const charactersList = [
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/307-han-solo.jpg",
   },
   {
-    id: 308,
-    name: "Hancock",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/308-hancock.jpg",
-  },
-  {
-    id: 309,
-    name: "Harley Quinn",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/309-harley-quinn.jpg",
-  },
-  {
-    id: 310,
-    name: "Harry Potter",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/310-harry-potter.jpg",
-  },
-  {
-    id: 311,
-    name: "Havok",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/311-havok.jpg",
-  },
-  {
-    id: 312,
-    name: "Hawk",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/312-hawk.jpg",
-  },
-  {
-    id: 313,
-    name: "Hawkeye",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/313-hawkeye.jpg",
-  },
-  {
     id: 314,
     name: "Hawkeye II",
     image:
@@ -1415,12 +1467,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/330-hope-summers.jpg",
   },
-  {
-    id: 332,
-    name: "Hulk",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/332-hulk.jpg",
-  },
+
   {
     id: 333,
     name: "Human Torch",
@@ -1493,18 +1540,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/344-invisible-woman.jpg",
   },
-  {
-    id: 345,
-    name: "Iron Fist",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/345-iron-fist.jpg",
-  },
-  {
-    id: 346,
-    name: "Iron Man",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/346-iron-man.jpg",
-  },
+
   {
     id: 347,
     name: "Iron Monger",
@@ -1607,12 +1643,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/no-portrait.jpg",
   },
-  {
-    id: 370,
-    name: "Joker",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/370-joker.jpg",
-  },
+
   {
     id: 371,
     name: "Jolt",
@@ -2855,18 +2886,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/619-spider-gwen.jpg",
   },
-  {
-    id: 620,
-    name: "Spider-Man",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/620-spider-man.jpg",
-  },
-  {
-    id: 623,
-    name: "Spider-Woman",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/623-spider-woman.jpg",
-  },
+
   {
     id: 625,
     name: "Spider-Woman III",
@@ -3317,12 +3337,7 @@ export const charactersList = [
     image:
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/719-wonder-man.jpg",
   },
-  {
-    id: 720,
-    name: "Wonder Woman",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/720-wonder-woman.jpg",
-  },
+
   {
     id: 722,
     name: "Wyatt Wingfoot",
@@ -3378,3 +3393,5 @@ export const charactersList = [
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/731-zoom.jpg",
   },
 ];
+export const blurImageurl =
+  "data:image/jpeg;base64,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";

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
-import { Box, Flex, Spinner } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { HeroCharacter } from "../../components/hero details/hero-description";
 import { RandomMovieSuggestion } from "../../components/hero details/random-movie-selector";
 import { MoviesList } from "../../components/hero details/movie-list";
@@ -9,6 +9,7 @@ import {
   IMovieList,
   ISearch,
 } from "../../components/hero details/types";
+import { Loader } from "../../components/loader";
 
 type HeroDetailsPropsType = {
   heroMovies: IMovieList;
@@ -26,11 +27,7 @@ function HeroDetails(props: HeroDetailsPropsType) {
   }, [heroMovies?.Response]);
 
   if (isFallback) {
-    return (
-      <Flex justifyContent="center" alignItems="center" h="90vh" w="100vw">
-        <Spinner size="xl" color="red.500" />
-      </Flex>
-    );
+    return <Loader h="90vh" w="100vw" />;
   }
   const moviesListLength = moviesList?.length > 0;
 
@@ -66,7 +63,7 @@ export async function getStaticProps(context: { params: { id: string } }) {
   const relevantMoviesRespose = await fetch(
     `https://www.omdbapi.com/?s=${
       heroName && heroName.join(" ")
-    }&apikey=7bf21933`
+    }&apikey=85182628`
   );
   const heroMovies = await relevantMoviesRespose?.json();
   return {

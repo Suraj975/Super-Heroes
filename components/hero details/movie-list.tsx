@@ -4,6 +4,7 @@ import { useHandlePagination } from "../../hooks/use-pagination";
 import { MovieInfoModal } from "./movie-info-modal";
 import { useImdbModal } from "../../hooks/use-imdb-modal";
 import { MovieListProps } from "./types";
+import { useRouter } from "next/router";
 
 export const MoviesList = ({
   moviesList,
@@ -12,6 +13,8 @@ export const MoviesList = ({
 }: MovieListProps) => {
   const [page, setPage] = useState(1);
   const { setImdbId, isOpen, onClose, imdbId } = useImdbModal();
+  const { query } = useRouter();
+  let heroName = (query?.id as string)?.match(/[a-zA-Z]+/g);
   const { lastElementRef } = useHandlePagination(
     moviesList,
     page,
@@ -19,11 +22,17 @@ export const MoviesList = ({
     totalResults
   );
   const getMovies = async () => {
-    const relevantMoviesRespose = await fetch(
-      `https://www.omdbapi.com/?s=${"batman"}&apikey=7bf21933&page=${page}`
-    );
-    const heroMovies = await relevantMoviesRespose?.json();
-    setMoviesList([...moviesList, ...heroMovies?.Search]);
+    try {
+      const relevantMoviesRespose = await fetch(
+        `https://www.omdbapi.com/?s=${
+          heroName && heroName.join(" ")
+        }&apikey=7bf21933&page=${page}`
+      );
+      const heroMovies = await relevantMoviesRespose?.json();
+      setMoviesList([...moviesList, ...heroMovies?.Search]);
+    } catch (error) {
+      console.log("api error", error);
+    }
   };
   useEffect(() => {
     if (page === 1) return;

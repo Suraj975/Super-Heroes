@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Image, Heading, Flex, Button } from "@chakra-ui/react";
 import { MovieInfoModal } from "./movie-info-modal";
 import { useImdbModal } from "../../hooks/use-imdb-modal";
-import { IMovieList, ISearch } from "./types";
+import { ISearch } from "./types";
 
 export const RandomMovieSuggestion = ({
   moviesList,
@@ -56,7 +56,9 @@ export const RandomMovieSuggestion = ({
           }
           my="10px"
           width="80%"
+          color="white"
           colorScheme="red"
+          bg="red.500"
           fontWeight="bold"
           fontSize="20px"
         >

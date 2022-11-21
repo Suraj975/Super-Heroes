@@ -38,6 +38,11 @@ function HeroSearch(props: {
       <Input
         width={["85%", "80%"]}
         borderRadius="10px"
+        borderColor="red.500"
+        _focusVisible={{
+          borderColor: "red.400",
+        }}
+        border="2px solid"
         h="50px"
         color="white"
         type="text"

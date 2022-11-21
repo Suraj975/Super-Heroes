@@ -71,7 +71,7 @@ const HeroStatsTab = ({ content }: { content: contentType }) => {
 };
 
 type HeroCharacterProps = {
-  heroDetails: IHeroDetails | undefined;
+  heroDetails: IHeroDetails;
 };
 
 export const HeroCharacter = (props: HeroCharacterProps) => {
@@ -97,7 +97,7 @@ export const HeroCharacter = (props: HeroCharacterProps) => {
             height={"100%"}
           />
         </Flex>
-        <Box w="100%" mx="10px">
+        <Box minH="524px" w="100%" mx="10px">
           <Heading
             mb="10px"
             mt={["10px", 0]}
