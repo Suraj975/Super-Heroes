@@ -97,7 +97,7 @@ export function MovieInfoModal({
     const getMoviesInfo = async () => {
       setLoading(true);
       const movieInfoResponse = await fetch(
-        `https://imdb-api.com/en/API/Title/k_k56ot1w0/${imdbId}/Images,Trailer,Ratings`
+        `https://imdb-api.com/en/API/Title/k_c1b72jma/${imdbId}/Images,Trailer,Ratings`
       );
       const data = await movieInfoResponse?.json();
       if (data?.errorMessage) {
