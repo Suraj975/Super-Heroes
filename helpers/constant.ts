@@ -2990,12 +2990,6 @@ export const charactersList = [
       "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/643-supergirl.jpg",
   },
   {
-    id: 644,
-    name: "Superman",
-    image:
-      "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/644-superman.jpg",
-  },
-  {
     id: 645,
     name: "Swamp Thing",
     image:
