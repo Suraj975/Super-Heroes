@@ -97,7 +97,7 @@ export const HeroCharacter = (props: HeroCharacterProps) => {
             height={"100%"}
           />
         </Flex>
-        <Box minH="524px" w="100%" mx="10px">
+        <Box minH="524px" w="100%" mx={[0, "10px"]}>
           <Heading
             mb="10px"
             mt={["10px", 0]}
@@ -110,11 +110,11 @@ export const HeroCharacter = (props: HeroCharacterProps) => {
           >
             {heroDetails?.name}
           </Heading>
-          <Tabs mx="5px" colorScheme="red">
+          <Tabs mx={[0, "5px"]} colorScheme="red">
             <TabList>
-              <Tab fontWeight={"bold"}>POWERSTATS</Tab>
-              <Tab fontWeight={"bold"}>BIOGRAPHY</Tab>
-              <Tab fontWeight={"bold"}>APPEARANCE</Tab>
+              <Tab>POWERSTATS</Tab>
+              <Tab>BIOGRAPHY</Tab>
+              <Tab>APPEARANCE</Tab>
             </TabList>
 
             <TabPanels>

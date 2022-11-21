@@ -53,7 +53,13 @@ export const MoviesList = ({
     );
 
   return (
-    <Box mt="20px">
+    <Flex
+      flexDir="column"
+      justifyContent="center"
+      alignItems="center"
+      mt="20px"
+      width="100%"
+    >
       <Heading
         size="lg"
         borderBottom="1px solid"
@@ -61,13 +67,14 @@ export const MoviesList = ({
         bg="red.500"
         px="20px"
         py="10px"
+        width="98%"
         borderRadius="5px"
       >
         Relevant Movies
       </Heading>
       <Flex
         w="100%"
-        justifyContent="flex-start"
+        justifyContent="center"
         mt="20px"
         flexWrap="wrap"
         flexDir={["column", "row"]}
@@ -78,7 +85,8 @@ export const MoviesList = ({
             <Box
               cursor="pointer"
               onClick={() => setImdbId(movie?.imdbID)}
-              m="10px"
+              mx={["5px", "10px"]}
+              my="10px"
               w="400px"
               maxW={["100%", "400px"]}
               key={movie?.imdbID}
@@ -109,6 +117,6 @@ export const MoviesList = ({
       {imdbId && (
         <MovieInfoModal onClose={onClose} isOpen={isOpen} imdbId={imdbId} />
       )}
-    </Box>
+    </Flex>
   );
 };

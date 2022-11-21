@@ -10,7 +10,7 @@ export default function Heroes() {
   const [herolist, setHeroList] =
     useState<CharactersListType[]>(charactersList);
   return (
-    <Flex flexDir={"column"} padding={[0, "0 2rem"]}>
+    <Flex flexDir={"column"}>
       <Head>
         <title>Super Heroes</title>
         <meta name="description" content="Super heroes comics and movies" />
